@@ -9,15 +9,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
 
 </head>
-<body class="px-12 pt-10 pb-6 sm:px-18 sm:pt-15 sm:pb-8">
+<body class="px-12 pt-10 pb-6 sm:px-18 sm:pt-15 sm:pb-8 bg-[#110703]">
   <header class="flex flex-col sm:flex-row items-start justify-between select-none pb-8 sm:pb-16">
     <div class="flex flex-col">
-      <span class="text-3xl font-semibold">Arthur GARRAUD</span>
-      <span class="text-2xl text-zinc-400">Computer Engineer</span>
+      <span class="text-3xl font-semibold text-[#E6E6E6]">Arthur GARRAUD</span>
+      <span class="text-2xl text-[#FF9B70]">Computer Engineer</span>
     </div>
-    <div class="flex gap-8" aria-label="Navigation principale">
-      <a id="projectsButton" onclick="loadProjects()" class="nav-link text-xl font-semibold text-zinc-200 hover:text-zinc-300 transition-colors">Projects</a>
-      <a id="whoamiButton" onclick="loadAbout()" class="nav-link text-xl font-semibold text-zinc-500 hover:text-zinc-300 transition-colors">Whoami</a>
+    <div class="flex gap-8 pt-1" aria-label="Navigation principale">
+        <a id="whoamiButton" onclick="loadAbout()" class="nav-link text-xl font-semibold text-zinc-200 hover:text-zinc-300 transition-colors">Whoami</a>
+        <a id="websitesButton" onclick="loadWebsites()" class="nav-link text-xl font-semibold text-zinc-500 hover:text-zinc-300 transition-colors">Websites</a>
+        <a id="softwaresButton" onclick="loadSoftwares()" class="nav-link text-xl font-semibold text-zinc-500 hover:text-zinc-300 transition-colors">Softwares</a>
     </div>
   </header>
 
@@ -26,40 +27,60 @@
   </main>
 
   <footer class="flex flex-col mx-auto items-center pt-10">
-        <span class="text-l text-zinc-400">arthurgarraud@proton.me</span>
+        <span style="color: #FF9B70" class="text-l text-zinc-400">arthurgarraud@proton.me</span>
         <span class="text-l text-zinc-400 text-center">© 2025 Arthur GARRAUD. All rights reserved.</span>
   </footer>
 </body>
 
 <script>
-    function loadProjects() {
-        fetch('projects.html')
-            .then(response => response.text())
-            .then(html => {
-                const content = document.getElementById('content');
-                const projectsButton = document.getElementById('projectsButton');
-                const whoamiButton = document.getElementById('whoamiButton');
-                content.innerHTML = html;
-                projectsButton.classList.replace('text-zinc-500', 'text-zinc-200');
-                whoamiButton.classList.replace('text-zinc-200', 'text-zinc-500');
-            })
-            .catch(err => console.error('Erreur de chargement :', err));
-    }
-
     function loadAbout() {
         fetch('whoami.html')
             .then(response => response.text())
             .then(html => {
                 const content = document.getElementById('content');
                 const whoamiButton = document.getElementById('whoamiButton');
-                const projectsButton = document.getElementById('projectsButton');
+                const softwaresButton = document.getElementById('softwaresButton');
+                const websitesButton = document.getElementById('websitesButton');
                 content.innerHTML = html;
                 whoamiButton.classList.replace('text-zinc-500', 'text-zinc-200');
-                projectsButton.classList.replace('text-zinc-200', 'text-zinc-500');
+                softwaresButton.classList.replace('text-zinc-200', 'text-zinc-500');
+                websitesButton.classList.replace('text-zinc-200', 'text-zinc-500');
             })
             .catch(err => console.error('Erreur de chargement :', err));
     }
 
-    loadProjects();
+    function loadSoftwares() {
+        fetch('softwares.html')
+            .then(response => response.text())
+            .then(html => {
+                const content = document.getElementById('content');
+                const whoamiButton = document.getElementById('whoamiButton');
+                const softwaresButton = document.getElementById('softwaresButton');
+                const websitesButton = document.getElementById('websitesButton');
+                content.innerHTML = html;
+                softwaresButton.classList.replace('text-zinc-500', 'text-zinc-200');
+                whoamiButton.classList.replace('text-zinc-200', 'text-zinc-500');
+                websitesButton.classList.replace('text-zinc-200', 'text-zinc-500');
+            })
+            .catch(err => console.error('Erreur de chargement :', err));
+    }
+
+    function loadWebsites() {
+        fetch('websites.html')
+            .then(response => response.text())
+            .then(html => {
+                const content = document.getElementById('content');
+                const whoamiButton = document.getElementById('whoamiButton');
+                const softwaresButton = document.getElementById('softwaresButton');
+                const websitesButton = document.getElementById('websitesButton');
+                content.innerHTML = html;
+                websitesButton.classList.replace('text-zinc-500', 'text-zinc-200');
+                whoamiButton.classList.replace('text-zinc-200', 'text-zinc-500');
+                softwaresButton.classList.replace('text-zinc-200', 'text-zinc-500');
+            })
+            .catch(err => console.error('Erreur de chargement :', err));
+    }
+
+    loadAbout();
 </script>
 </html>

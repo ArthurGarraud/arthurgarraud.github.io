@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark" xmlns="http://www.w3.org/1999/html">
+<body>
+
+<main class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-12">
+    <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-4">
+            <p class="text-white text-2xl font-semibold">Tiger Compiler</p>
+            <div class="flex flex-col gap-1 text-l">
+                <p class="font-semibold text-zinc-200">C++ • RE/Flex &amp; Bison • LLVM IR • Autotools</p>
+                <p class="font-semibold text-zinc-200">Compiler Architecture • Team-Based Development</p>
+            </div>
+            <div class="text-[#cccccc]">
+                <p>Long-term collaborative build of a full compiler for the Tiger programming language, which I helped develop end-to-end as an advanced self-driven engineering project. The work followed an industry-style, multi-stage architecture with clear module separation and long-term maintainability in mind.</p>
+                <p>I contributed across all major components: source processing (lexing and parsing), building the abstract syntax tree with Visitor patterns, semantic analysis and symbol bindings, type checking, desugaring passes, and translation into efficient LLVM IR backed by a lightweight custom runtime.</p>
+            </div>
+            <div class="flex gap-6 text-sm text-[#666666]">
+                <p>School project</p>
+            </div>
+        </div>
+
+        <div class="flex rounded-xl overflow-hidden aspect-[16/9] items-start">
+            <div class="w-1/2">
+                <img class="block h-full w-full object-cover"
+                     src="./static/tiger-1.png" alt="Compiler terminal" />
+            </div>
+            <div class="w-1/2">
+                <img class="block h-full w-full object-cover"
+                     src="./static/tiger-2.png" alt="Dark code" />
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
