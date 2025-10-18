@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<body>
+
+<main class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-12">
+    <!-- Projet 1 -->
+    <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-4">
+            <p class="text-white text-2xl font-semibold">Tiger Compiler</p>
+            <div class="flex flex-col gap-1 text-l">
+                <p class="font-semibold text-zinc-200">C++ • RE/Flex &amp; Bison • LLVM IR • Autotools</p>
+                <p class="font-semibold text-zinc-200">Compiler Architecture • Team-Based Development</p>
+            </div>
+            <p class="text-[#cccccc]">
+                Long-term collaborative build of a full compiler for the Tiger language, following an industrial code organization and multi-stage architecture. Worked as part of an engineering team to implement the front-end (lexing/parsing), AST with Visitor patterns, semantic analysis and bindings, type checking, desugaring passes, and translation to LLVM IR with a lightweight and performant runtime.
+            </p>
+            <div class="flex gap-6 text-sm text-[#666666]">
+                <p>School project</p>
+            </div>
+        </div>
+
+        <div class="flex rounded-xl overflow-hidden aspect-[16/9] items-start">
+            <div class="w-1/2">
+                <img class="block h-full w-full object-cover"
+                     src="./static/tiger-1.png" alt="Compiler terminal" />
+            </div>
+            <div class="w-1/2">
+                <img class="block h-full w-full object-cover"
+                     src="./static/tiger-2.png" alt="Dark code" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Projet 2 -->
+    <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-4">
+            <p class="text-white text-2xl font-semibold">Streamboxd</p>
+            <div class="flex flex-col gap-1 text-l">
+                <p class="font-semibold text-zinc-200">Java (Quarkus) • React • Docker • Gitlab CI/CD</p>
+                <p class="font-semibold text-zinc-200">REST API/Clients • Redis • PostgreSQL</p>
+            </div>
+            <p class="text-[#cccccc]">
+                Backend-driven movie streaming platform built as a personal challenge to practice production-grade microservices and async workflows. It exposes a full movie catalog, automatically fetches and prepares files from external sources for streaming, and delivers real-time user updates via WebSockets/SSE.  Architected industry type layers, fully containerized with Docker, and deployed through automated CI/CD pipelines.
+            </p>
+            <div class="flex gap-6 text-sm text-[#666666]">
+                <p>Side project (unreleased)</p>
+            </div>
+        </div>
+
+        <div class="flex rounded-xl overflow-hidden aspect-[16/9] items-start">
+            <div class="w-full">
+                <img class="block h-full w-full object-cover"
+                     src="./static/streamboxd.png" alt="Compiler terminal" />
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

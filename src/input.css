@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base-600: #1a1a1a;
+}
+
+@import "./globals.css";

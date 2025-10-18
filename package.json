@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "scripts": {
+    "dev:css": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --minify",
+    "serve": "live-server ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "@tailwindcss/postcss": "^4.1.14",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.1.14"
+  }
+}
