@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
+
 @theme {
-  --color-base-600: #1a1a1a;
+    --color-brown-light: #F3D5B5;
+    --color-brown-mid: #efceab;
+    --color-brown-dark:  #432818;
 }
 
 @import "./globals.css";
