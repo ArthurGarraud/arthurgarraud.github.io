@@ -3,8 +3,11 @@
 
 @theme {
     --color-brown-light: #F3D5B5;
+    --color-brown-light2: #f1d5b7;
     --color-brown-mid: #efceab;
     --color-brown-mid2: #eccaa5;
+    --color-brown-mid3: #e8c39b;
+    --color-brown-mid3g: #e7c097;
     --color-brown-soft: #9c6644;
     --color-brown-soft2: #99582a;
     --color-brown-dark:  #432818;
